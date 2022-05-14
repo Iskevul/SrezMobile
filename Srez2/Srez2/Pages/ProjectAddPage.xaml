@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Srez2.Pages.ProjectAddPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Center" Margin="0, 15, 0, 0">
+                <Entry Placeholder="Имя проекта" 
+                           PlaceholderColor="Gray"  
+                           x:Name="ProjectName" 
+                           TextColor="Black"
+                           Text="{Binding ProjectName}"
+                           BackgroundColor="#e8e8e8"
+                           HeightRequest="60"
+                           Margin="40, 7, 40, 0"
+                           Visual="Material"/>
+
+                <DatePicker
+                    x:Name="ProjectDate" 
+                    TextColor="Black"
+                    BackgroundColor="#e8e8e8"
+                    HeightRequest="60"
+                    Margin="40, 7, 40, 0"
+                    Visual="Material"/>
+
+
+
+
+
+
+            </StackLayout>
+
+            <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 65, 49, 40">
+                <Button Text="Отмена" 
+                        CornerRadius="200" 
+                        BackgroundColor="#00b2ff" 
+                        TextColor="White" 
+                        x:Name="BRemove" 
+                        Clicked="BRemove_Clicked"
+                        HeightRequest="49"
+                        WidthRequest="149"
+                        FontSize="15"
+                        Margin="0,15,11,0"/>
+
+                <Button Text="Добавить" 
+                        CornerRadius="200" 
+                        BackgroundColor="#00b2ff" 
+                        TextColor="White" 
+                        x:Name="BAddProjece" 
+                        Clicked="BAddProject_Clicked"
+                        HeightRequest="49"
+                        WidthRequest="149"
+                        FontSize="15"
+                        Margin="11,15,0,0"/>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

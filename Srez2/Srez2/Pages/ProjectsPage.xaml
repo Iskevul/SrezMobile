@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Srez2.Pages.ProjectsPage"
+             Title="Проекты"
+             Visual="Default">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Order="Primary" x:Name="AddProject" Clicked="AddProject_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="LWSelectPeoject" 
+                      ItemsSource="{Binding LVProjectsName}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
